@@ -1,0 +1,566 @@
+# Translations template for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-09-28 01:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: libs/httplib2/__init__.py:394
+#, python-format
+msgid "Content purported to be compressed with %s but failed to decompress."
+msgstr ""
+
+#: libs/httplib2/__init__.py:504
+#, python-format
+msgid "Unsupported value for qop: %s."
+msgstr ""
+
+#: libs/httplib2/__init__.py:507 libs/httplib2/__init__.py:570
+#, python-format
+msgid "Unsupported value for algorithm: %s.algorithm"
+msgstr ""
+
+#: libs/httplib2/__init__.py:567
+msgid "The challenge doesn't contain a server nonce, or this one is empty."
+msgstr ""
+
+#: libs/httplib2/__init__.py:573
+#, python-format
+msgid "Unsupported value for pw-algorithm: %s.pw-algorithm"
+msgstr ""
+
+#: libs/httplib2/__init__.py:1220
+msgid "Redirected but the response is missing a Location: header."
+msgstr ""
+
+#: static/templates/generic_error.html:8
+msgid "Page Not Found"
+msgstr ""
+
+#: static/templates/generic_error.html:18
+msgid "Sorry. A serious error has occured."
+msgstr ""
+
+#: static/templates/generic_error.html:19
+msgid "Return home."
+msgstr ""
+
+#: static/templates/generic_error.html:21
+#, python-format
+msgid "Code: %(code)s"
+msgstr ""
+
+#: static/templates/index.html:5
+msgid "Algae is an application template for Google App Engine"
+msgstr ""
+
+#: static/templates/index.html:17
+msgid "Users"
+msgstr ""
+
+#: static/templates/index.html:21
+msgid "RESTful"
+msgstr ""
+
+#: static/templates/index.html:22
+msgid "RPC"
+msgstr ""
+
+#: static/templates/index.html:25
+msgid "Security"
+msgstr ""
+
+#: static/templates/index.html:26
+msgid "CSS/LESS"
+msgstr ""
+
+#: static/templates/index.html:27
+msgid "I18N"
+msgstr ""
+
+#: static/templates/index.html:28
+msgid "Testing"
+msgstr ""
+
+#: static/templates/index.html:29
+msgid "About"
+msgstr ""
+
+#: static/templates/index.html:35
+msgid "Profiles"
+msgstr ""
+
+#: static/templates/index.html:37
+msgid ""
+"\n"
+"        <code>gae/handlers/oauth.py</code> and "
+"<code>gae/handlers/email_auth.py</code> request handlers are responsible "
+"for processing OAuth and email user authentication. <br>\n"
+"        <code>USER_ATTR</code> dictionary in "
+"<code>gae/handlers/oauth.py</code> defines how user fields map between "
+"different services (identity providers) and the app's internal user "
+"model. The rest is a lot of smart Python code you needn't worry about.\n"
+msgstr ""
+
+#: static/templates/index.html:43
+#, python-format
+msgid ""
+"\n"
+"          <p>Signed in as <img style=\"max-width:100px\" src = "
+"\"%(pic)s\"> via <a href=\"%(profile)s\">%(username)s</a>. <a "
+"href=\"/logout\">Logout</a>\n"
+"          "
+msgstr ""
+
+#: static/templates/index.html:47
+msgid ""
+"\n"
+"          No one is signed in. Sign in with:\n"
+"          <ul>\n"
+"            <li><a href=\"/auth/facebook\">Facebook</a>\n"
+"            <li><a href=\"/auth/google\">Google</a>\n"
+"            <li><a href=\"/auth/twitter\">Twitter</a>\n"
+"            <li><a data-toggle=\"modal\" href=\"#signup\">Sign up</a> or "
+"<a data-toggle=\"modal\" href=\"#signin\">sign in</a> with email\n"
+"          </ul>\n"
+"          "
+msgstr ""
+
+#: static/templates/index.html:57
+msgid "Sessions"
+msgstr ""
+
+#: static/templates/index.html:59
+#, python-format
+msgid ""
+"\n"
+"        Sessions are tracked by encrypted, client-side cookies. "
+"<code>COOKIE_TEMPLATE</code> variable in <code>gae/settings.py</code> "
+"defines the cookie content, and <code>session</code> dictionary can be "
+"accessed in every request handler. \n"
+"        </blockquote>\n"
+"     \n"
+"        <p>Reload this page. The number of pageviews should increase. \n"
+"    \n"
+"        <p>Pageviews: %(pageviews)s\n"
+"        "
+msgstr ""
+
+#: static/templates/index.html:73
+msgid ""
+"\n"
+"        Full CRUD access to models is supported via POST, PUT, GET, and "
+"DELETE AJAX calls. See <code>gae/static/js/script.js</code> for sample "
+"code. The calls are routed via <code>BaseRESTHandler</code> in "
+"<code>gae/handlers/common.py</code>\n"
+"        <br>\n"
+"        The forms below are automatically generated from model "
+"definitions in <code>gae/code/model.py</code>. \n"
+"        <code>generate_model_form()</code> in "
+"<code>gae/core/model.py</code> converts the model to a dictionary of "
+"template variables, and <code>gae/static/templates/forms.html</code> "
+"macro generates the corresponding HTML.\n"
+"        "
+msgstr ""
+
+#: static/templates/index.html:80
+msgid "Create Entity"
+msgstr ""
+
+#: static/templates/index.html:85 static/templates/index.html:96
+#: static/templates/index.html:288
+msgid "Heads up!"
+msgstr ""
+
+#: static/templates/index.html:86
+msgid ""
+"\n"
+"          Only logged in users are authorized to create new entities. See"
+" Security tab for how to modify these rules for your app.\n"
+"          "
+msgstr ""
+
+#: static/templates/index.html:93
+msgid "Update/Delete Entity"
+msgstr ""
+
+#: static/templates/index.html:97
+msgid ""
+"\n"
+"          Only logged in users are authorized to delete entities. See "
+"Security tab for how to modify these rules for your app.\n"
+"          "
+msgstr ""
+
+#: static/templates/index.html:108 static/templates/index.html:127
+msgid "Update"
+msgstr ""
+
+#: static/templates/index.html:109 static/templates/index.html:128
+msgid "Delete"
+msgstr ""
+
+#: static/templates/index.html:117
+msgid "ID"
+msgstr ""
+
+#: static/templates/index.html:118
+msgid "Summary"
+msgstr ""
+
+#: static/templates/index.html:119
+msgid "Action"
+msgstr ""
+
+#: static/templates/index.html:140
+msgid ""
+"\n"
+"        <p><span class=\"app-less-verify\">If this text appears in "
+"blue</span>, then LESS stylesheets are working. \n"
+"        <p><code>gae/static/css/less/app.less</code> contains "
+"application-specific styles. You can recompile updated styles by running"
+" \n"
+"        <code>npm run-script less</code> from <code>gae/static</code>\n"
+"        \n"
+"        <p>If <code>npm run-script less</code> command fails:</p>\n"
+"        <ul>\n"
+"          <li>Install npm.\n"
+"          <li>Run <code>npm init</code>\n"
+"          <li>Accept all defaults (keep pressing Enter)\n"
+"          <li>Run <code>$ npm install less --save</code> to install LESS\n"
+"          <li>Run <code>$ npm install uglify-js --save</code> to install "
+"Javascript minimizer.\n"
+"          <li>Run <code>$ npm run-script less; npm run-script js</code> "
+"to generate site CSS and minified Javascript.\n"
+"        </ul>\n"
+"        "
+msgstr ""
+
+#: static/templates/index.html:160
+msgid ""
+"Algae is designed to get you app running on Google App Engine in less "
+"than 3 minutes and 42 seconds. Guaranteed, or your money back."
+msgstr ""
+
+#: static/templates/index.html:162
+msgid ""
+"Algae integrates de facto industry standards (like Twitter Bootstrap and "
+"HTML5 Boilerplate) with features every web app needs (like user "
+"management and third-party authentication). It's flexible, functional, "
+"and easy to use."
+msgstr ""
+
+#: static/templates/index.html:164
+msgid "Here is what you get:"
+msgstr ""
+
+#: static/templates/index.html:170
+msgid "User account framework, including: "
+msgstr ""
+
+#: static/templates/index.html:172
+msgid "Twitter authentication"
+msgstr ""
+
+#: static/templates/index.html:173
+msgid "Google authentication"
+msgstr ""
+
+#: static/templates/index.html:174
+msgid "Facebook authentication"
+msgstr ""
+
+#: static/templates/index.html:175
+msgid "Email authentication"
+msgstr ""
+
+#: static/templates/index.html:176
+msgid "Others (<em>Work in progress</em>)"
+msgstr ""
+
+#: static/templates/index.html:179
+msgid "Plain and RESTful style API bootstrap code:"
+msgstr ""
+
+#: static/templates/index.html:181
+msgid "Auto-generate HTML forms from GAE data model"
+msgstr ""
+
+#: static/templates/index.html:182
+msgid "Seamless entity CRUD via AJAX"
+msgstr ""
+
+#: static/templates/index.html:185
+msgid "jQuery form validation"
+msgstr ""
+
+#: static/templates/index.html:186
+msgid "Basic testing infrastructure (<em>Work in progress</em>)"
+msgstr ""
+
+#: static/templates/index.html:187
+msgid "and more.."
+msgstr ""
+
+#: static/templates/index.html:190
+msgid "Finally, a GAE template to write home about!"
+msgstr ""
+
+#: static/templates/index.html:196
+msgid ""
+"A Python decorator -- <code>@with_login</code> -- can be used on any "
+"method of <code>BaseHandler</code> or <code>BaseAPIHandler</code> (or "
+"their subclasses) to prevent unauthenticated users from viewing certain "
+"pages or calling APIs."
+msgstr ""
+
+#: static/templates/index.html:198
+msgid ""
+"For instance, this <a href=\"/login_only\">page</a> can only be viewed "
+"after you login."
+msgstr ""
+
+#: static/templates/index.html:204
+msgid ""
+"Simply run <code>$ python tests/testrunner.py /usr/local/google_appengine"
+" .</code> from command line to execute unit and API tests."
+msgstr ""
+
+#: static/templates/index.html:206
+msgid ""
+"If the above command fails, make sure that <code>webtest</code> and "
+"<code>unittest2</code> Python modules are installed and that "
+"<code>APPLICATION_ID</code> and <code>SERVER_SOFTWARE</code> environment "
+"variables are set correctly, as they are required by "
+"<code>testrunner.py</code> script to run."
+msgstr ""
+
+#: static/templates/index.html:208
+msgid "Here is how to set environment variables:"
+msgstr ""
+
+#: static/templates/index.html:218
+msgid ""
+"Algae comes preconfigured for internationalization, so your application "
+"can speak multiple languages."
+msgstr ""
+
+#: static/templates/index.html:219
+msgid ""
+"To use this feature, make sure you have both <code>jinja2</code> and "
+"<code>babel</code> installed to compile the translations for Algae."
+msgstr ""
+
+#: static/templates/index.html:220
+msgid "These steps are needed for creating a multilanguage application:"
+msgstr ""
+
+#: static/templates/index.html:222 static/templates/index.html:228
+msgid "Configure the locales"
+msgstr ""
+
+#: static/templates/index.html:223 static/templates/index.html:232
+msgid "Prepare code &amp; templates for i18n"
+msgstr ""
+
+#: static/templates/index.html:224 static/templates/index.html:256
+msgid "Extract strings into separate messages file"
+msgstr ""
+
+#: static/templates/index.html:225 static/templates/index.html:261
+msgid "Translate the messages into all needed languages"
+msgstr ""
+
+#: static/templates/index.html:226 static/templates/index.html:272
+msgid "Compile message files"
+msgstr ""
+
+#: static/templates/index.html:229
+msgid ""
+"In <code>settings.py</code> you find the list of\n"
+"           the supported locales. Update this list according to your\n"
+"           needs."
+msgstr ""
+
+#: static/templates/index.html:233
+#, python-format
+msgid ""
+"\n"
+"           In essence this boils down to putting any language-specific "
+"text\n"
+"           into a sequence of <code>%(transtxt)s</code> -\n"
+"           <code>%(endtranstxt)s</code> in the jinja2-template\n"
+"           files and into a sequence of <code>_('</code> -\n"
+"           <code>')</code> in the python files."
+msgstr ""
+
+#: static/templates/index.html:239
+msgid ""
+"Each python file will need to add an import\n"
+"           for this to work:"
+msgstr ""
+
+#: static/templates/index.html:244
+msgid ""
+"Some special handling is possible in the\n"
+"           jinja2-templates, see <a\n"
+"           href=\"http://jinja.pocoo.org/docs/templates/#i18n-in-"
+"templates\"\n"
+"           target=\"_blank\">i18n in templates</a> from the jinja2\n"
+"           documentation."
+msgstr ""
+
+#: static/templates/index.html:249
+msgid ""
+"And in case your template contains almost\n"
+"           only text which has to be translated, you can create a\n"
+"           separate template file per language and reference the template"
+"\n"
+"           in the python code with <code>_('</code><code>')</code>.<br>\n"
+"           You will then treat the name of the template as a\n"
+"           language-dependent text, which could be 'template.html' for\n"
+"           English and 'template.html.de' for German."
+msgstr ""
+
+#: static/templates/index.html:257
+msgid ""
+"In this step you extract all the strings in the\n"
+"           templates and python files into a translation template."
+msgstr ""
+
+#: static/templates/index.html:259
+msgid "Use the following command:"
+msgstr ""
+
+#: static/templates/index.html:262
+msgid ""
+"The very first time when you start your application\n"
+"           or when you add a new language you can enter the command:"
+msgstr ""
+
+#: static/templates/index.html:265
+msgid ""
+"However, once you have started with translating text\n"
+"           into a language you should use the command"
+msgstr ""
+
+#: static/templates/index.html:268
+msgid "The 'update' will preserve old translations."
+msgstr ""
+
+#: static/templates/index.html:269
+msgid ""
+"Now you find in the folder <code>./locale/en_US</code>\n"
+"        a file named <code>message.po</code> which you can edit and add\n"
+"        valid translations for the locale."
+msgstr ""
+
+#: static/templates/index.html:273
+msgid ""
+"In this last step you are optimizing the messages\n"
+"           files for runtime."
+msgstr ""
+
+#: static/templates/index.html:275
+msgid "Use the following command for this purpose:"
+msgstr ""
+
+#: static/templates/index.html:278
+msgid ""
+"Additional instructions can be found <a href=\"http://webapp-"
+"improved.appspot.com/tutorials/i18n.html\">here</a> and <a "
+"href=\"http://jinja.pocoo.org/docs/templates/#i18n-in-"
+"templates\">here</a>."
+msgstr ""
+
+#: static/templates/index.html:279
+msgid "View this page in <a href=\"/locale/de_DE\">German</a>"
+msgstr ""
+
+#: static/templates/index.html:284
+msgid "Change Email Address"
+msgstr ""
+
+#: static/templates/index.html:289
+msgid ""
+"\n"
+"          Only logged in users can change their email address. You can <a"
+" href=\"/\">login here</a>.\n"
+"          "
+msgstr ""
+
+#: static/templates/index.html:298 static/templates/index.html:317
+#: static/templates/index.html:353 static/templates/index.html:386
+msgid "Email address"
+msgstr ""
+
+#: static/templates/index.html:305
+msgid "Change"
+msgstr ""
+
+#: static/templates/index.html:312
+msgid "Add To Mailing List"
+msgstr ""
+
+#: static/templates/index.html:324 static/templates/index.html:371
+msgid "Sign Up"
+msgstr ""
+
+#: static/templates/index.html:339
+msgid "Sign up with your email address"
+msgstr ""
+
+#: static/templates/index.html:347
+msgid "Name"
+msgstr ""
+
+#: static/templates/index.html:359 static/templates/index.html:392
+msgid "Password"
+msgstr ""
+
+#: static/templates/index.html:379
+msgid "Sign in"
+msgstr ""
+
+#: static/templates/index.html:404
+msgid "Sign In"
+msgstr ""
+
+#: static/templates/layout.html:35
+msgid "Your browser is <em>ancient!</em>"
+msgstr ""
+
+#: static/templates/layout.html:35
+msgid ""
+"<a href=\"http://browsehappy.com/\">Upgrade to a different browser</a> or"
+" <a href=\"http://www.google.com/chromeframe/?redirect=true\">install "
+"Google Chrome Frame</a> to experience this site."
+msgstr ""
+
+#: static/templates/layout.html:45
+msgid "Application Template for Google App Engine"
+msgstr ""
+
+#: static/templates/layout.html:95
+msgid ""
+"Algae was created by Ilya Bagrak, who <a "
+"href=\"http://twitter.com/ibagrak\">tweets</a>,\n"
+"        <a href=\"http://codercofounder.wordpress.com\">blogs</a>, and "
+"responds to all <a "
+"href=\"https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to"
+"=replace-with-ilya.replace-with-bagrak@gmail.com\" "
+"target=\"_blank\">email</a>."
+msgstr ""
+

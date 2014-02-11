@@ -1,0 +1,8 @@
+.DS_Store
+.settings
+*.pyc
+*.sql3
+bulkloader-log-*
+static/node_modules
+secrets.py
+index.yaml
