@@ -44,6 +44,15 @@ handlers:
 - url: /font
   static_dir: static/font
 
+- url: /bootstrap
+  static_dir: static/bootstrap
+
+- url: /font-awesome
+  static_dir: static/font-awesome
+
+- url: /bootstrap-social
+  static_dir: static/bootstrap-social
+
 - url: /.*
   script: app.application
   
