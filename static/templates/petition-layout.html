@@ -59,8 +59,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav"></ul>
           <ul class="nav navbar-nav navbar-right">
-  <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#signupModal">Sign Up</button>
-<button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#myModal">Sign In</button>
+  <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#signup">Sign Up</button>
+<button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#signin">Sign In</button>
          </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -80,7 +80,7 @@
 
     </div> <!-- /container -->
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content container-fluid">
       <div class="modal-header">
@@ -102,11 +102,11 @@
 
   </div>
   <div class="col-md-6 col-md-offset-1">
-  <form role="form"  class="form-horizontal">
+  <form role="form"  class="form-horizontal" name="email-signin">
   <div class="form-group">
-  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"></div>
-  <div class="form-group">  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></div>
-   <div class="form-group"> <button type="submit" class="btn btn-default btn-block">Submit</button></div>
+  <input type="email" class="form-control" id="email" placeholder="Enter email"></div>
+  <div class="form-group">  <input type="password" class="form-control" id="password" placeholder="Password"></div>
+   <div class="form-group"> <button id="signin_btn" type="submit" class="btn btn-default btn-block">Submit</button></div>
 </form>
 
       </div>
@@ -114,7 +114,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="tri-state modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -122,18 +122,18 @@
         <h4 class="modal-title" style="text-align:center">Sign up form</h4>
       </div>
      <div class="modal-body">
-<form role="form">
+<form id="signup_form" role="form" name="email-signup">
   <div class="form-group">
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
+    <input type="text" class="form-control" id="username" placeholder="Full Name">
   </div>
 
   <div class="form-group">
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    <input type="email" class="form-control" id="email" placeholder="Enter email">
   </div>
   <div class="form-group">
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <input type="password" class="form-control" id="password_raw" placeholder="Password">
   </div>
-  <button type="submit" class="btn btn-default">Submit</button>
+  <button id="signup_btn" type="submit" class="btn btn-default">Submit</button>
 </form>
       </div>
 
@@ -150,7 +150,7 @@
 
     <script src="/bootstrap/js/bootstrap.min.js"></script>
   <!-- scripts concatenated and minified via build script -->
-  <!--script src="/js/min.js"></script-->
+  <script src="/js/script.js"></script>
   <!-- end scripts -->
 
 </body>

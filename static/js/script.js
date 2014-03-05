@@ -2,40 +2,7 @@
 
 $(document).ready( function() {
     // remove ugly IE shadow around links / tabs
-    $("a").focus(function() { $(this).blur(); });
-
-    // attach datepicker fields
-    $('div[id$="datepicker"]').datepicker();
-
-    // enable tabs on the index page
-    $('#tabs a').click(function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-    });
-
     // setup validation to play well with default Twitter bootstrap classes
-    $('form').each(function () {
-        $(this).validate({
-            errorClass:     "error",
-            errorElement:   "span", // class='help-inline'
-
-            highlight: function(element, errorClass, validClass) {
-                if (element.type === 'radio') {
-                    this.findByName(element.name).parent("div").parent("div").removeClass(validClass).addClass(errorClass);
-                } else {
-                    $(element).parent("div").parent("div").removeClass(validClass).addClass(errorClass);
-                }
-            },
-            unhighlight: function(element, errorClass, validClass) {
-                if (element.type === 'radio') {
-                    this.findByName(element.name).parent("div").parent("div").removeClass(errorClass).addClass(validClass);
-                } else {
-                    $(element).parent("div").parent("div").removeClass(errorClass).addClass(validClass);
-                }
-            }
-        });
-    });
-
     /* 
     Email authentication popups and forms
     */
@@ -95,8 +62,6 @@ $(document).ready( function() {
                 var invalid_fields = false;
 
                 frm.find(":input").each(function() {
-                    if (!$(this).hasClass('dp') && !$(this).hasClass('checkbox') && !frm.validate().element($(this)))
-                        invalid_fields = true;
 
                     if ($(this).attr('type') == 'password') {
                         kvs[$(this).attr('id')] = MD5($(this).val());
