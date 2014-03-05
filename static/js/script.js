@@ -1,5 +1,3 @@
-/* Author: @ibagrak */
-
 $(document).ready( function() {
     // remove ugly IE shadow around links / tabs
     // setup validation to play well with default Twitter bootstrap classes
@@ -122,3 +120,4 @@ $(document).ready( function() {
             }  
         });
     });
+ });
