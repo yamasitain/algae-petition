@@ -1,4 +1,4 @@
-{% extends "petition-layout.html" %}
+{% extends "petition-index-layout.html" %}
 
 {% block title %}
 Petition Magic makes online petitions a breeze!
@@ -7,5 +7,109 @@ Petition Magic makes online petitions a breeze!
 {% block scripts %}
 {% endblock %}
 
-{% block content %}
+{% block body %}
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>{% trans %}Your browser is <em>ancient!</em>{% endtrans %} {% trans %}<a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.{% endtrans %}</p><![endif]-->
+   
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav navbar-right">
+  <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#signup">Sign Up</button>
+<button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#signin">Sign In</button>
+         </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Petition Magic</h1>
+        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+          <a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#signin" role="button">Get started now &raquo;</a>
+      </div>
+
+    </div> <!-- /container -->
+<!-- Modal -->
+<div class="tri-state modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content container-fluid">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4>Sign in with</h4>
+      </div>    
+     <div class="modal-body row">
+     <div class="col-md-5">
+  
+<p>
+           <a class="btn btn-block btn-social btn-sm btn-facebook"><i class="fa fa-facebook"></i> Sign in with Facebook</a>
+</p>
+<p>
+           <a class="btn btn-block btn-social btn-sm btn-twitter"><i class="fa fa-twitter"></i> Sign in with Twitter</a>
+</p>
+<p>
+           <a class="btn btn-block btn-social btn-sm btn-google-plus"><i class="fa fa-google-plus"></i> Sign in with Google</a>
+</p>
+
+  </div>
+  <div class="col-md-6 col-md-offset-1">
+  <form role="form"  class="form-horizontal" name="email-signin">
+  <div class="form-group">
+  <input type="email" class="form-control" id="email" placeholder="Enter email"></div>
+  <div class="form-group">  <input type="password" class="form-control" id="password" placeholder="Password"></div>
+   <div class="form-group"> <button id="signin_btn" type="submit" class="btn btn-default btn-block">Submit</button></div>
+</form>
+
+      </div>
+        </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="tri-state modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" style="text-align:center">Sign up form</h4>
+      </div>
+     <div class="modal-body">
+<form id="signup_form" role="form" name="email-signup">
+  <div class="form-group">
+    <input type="text" class="form-control" id="username" placeholder="Full Name">
+  </div>
+
+  <div class="form-group">
+    <input type="email" class="form-control" id="email" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control" id="password_raw" placeholder="Password">
+  </div>
+  <button id="signup_btn" type="submit" class="btn btn-default">Submit</button>
+</form>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline 
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.8.1.min.js"><\/script>')</script-->
+
 {% endblock %}

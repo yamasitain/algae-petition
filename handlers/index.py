@@ -11,10 +11,7 @@ class Index(common.BaseHandler):
         self.session_inc_pageviews()
         
         if self.auth.get_user_by_session() is not None:
-       	   self.prep_html_response('index.html', 
-           { 'pageviews' : self.session['pageviews'], 
-           'widgets' : model.Widget.query().order(-model.Widget._key).fetch(5),
-           'form' : model.generate_model_form(model.Widget)})
+       	   self.prep_html_response('petition-home.html')
         else:
        	   self.prep_html_response('petition-index.html')
 
